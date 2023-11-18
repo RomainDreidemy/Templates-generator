@@ -1,0 +1,78 @@
+template:
+  name: decentralized_workplace
+  file_name: decentralized_workplace
+  key: decentralized_workplace_inventories
+
+  sheets:
+    instructions:
+      translation:
+        fr: 'Instructions'
+        en: 'Instructions'
+    inventories:
+      translation:
+        fr: 'Equipement travail Pays'
+        en: 'Workplace equipment country'
+    params:
+      translation:
+        fr: 'Params'
+        en: 'Params'
+
+  columns:
+    - key: type
+      translation:
+        fr: 'Type *'
+        en: 'Type *'
+      type: choices
+      required: true
+    - key: manufacturer
+      translation:
+        fr: 'Fabricant'
+        en: 'Manufacturer'
+      type: string
+      required: false
+    - key: model
+      translation:
+        fr: 'Modèle'
+        en: 'Model'
+      type: string
+      required: false
+    - key: date_of_purshase
+      translation:
+        fr: "Date d'achat"
+        en: 'Date of purshase'
+      type: date
+      required: false
+    - key: count
+      translation:
+        fr: "Nombre de modèle"
+        en: 'Number of model'
+      type: integer
+      required: false
+
+  choices:
+    - key: type
+      values:
+        - translation:
+            fr: 'Ordinateur'
+            en: 'Computer'
+        - translation:
+            fr: 'Téléphone'
+            en: 'Phone'
+        - translation:
+            fr: 'Tablette'
+            en: 'Tablet'
+        - translation:
+            fr: 'Imprimante'
+            en: 'Printer'
+        - translation:
+            fr: 'Routeur'
+            en: 'Router'
+        - translation:
+            fr: 'Switch'
+            en: 'Switch'
+        - translation:
+            fr: 'Serveur'
+            en: 'Server'
+        - translation:
+            fr: 'Autre'
+            en: 'Other'
